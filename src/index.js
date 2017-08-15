@@ -19,9 +19,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //const means "this is the final value - it won't change" - App won't change down the line
-const App = function() {
-  return <div>Hi!</div>;
-}
 //1.we want to create a new component. this component should produce html.
 //2.so take this component's HTML and put it on the page (in the DOM)
-ReactDOM.render(<App />);
+
+//older code
+// const App = function() {
+//   return <div>Hi!</div>;
+// }
+
+//ES6 syntax
+ const App = () => {
+  return <div>Hi!</div>;
+ }
+
+//ReactDOM.render(App); App is a class here, not an instance - have to wrap it in JSX tag
+ReactDOM.render(<App />, document.querySelector('.container'));
+//the above says "go find the div with class=container (in index.html) and try to render the <App /> component in that div"
