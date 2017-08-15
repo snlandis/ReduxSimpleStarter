@@ -15,7 +15,7 @@
 //   </Provider>
 //   , document.querySelector('.container'));
 
-
+import React from 'react';
 
 //const means "this is the final value - it won't change" - App won't change down the line
 const App = function() {
