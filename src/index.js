@@ -16,6 +16,7 @@
 //   , document.querySelector('.container'));
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 //const means "this is the final value - it won't change" - App won't change down the line
 const App = function() {
@@ -23,4 +24,4 @@ const App = function() {
 }
 //1.we want to create a new component. this component should produce html.
 //2.so take this component's HTML and put it on the page (in the DOM)
-React.render(App);
+ReactDOM.render(App);
