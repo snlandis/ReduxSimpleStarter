@@ -24,4 +24,4 @@ const App = function() {
 }
 //1.we want to create a new component. this component should produce html.
 //2.so take this component's HTML and put it on the page (in the DOM)
-ReactDOM.render(App);
+ReactDOM.render(<App />);
