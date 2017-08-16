@@ -18,6 +18,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const API_KEY = 'AIzaSyCwbRmrRhqp0my7FoeKwCAfmbUKjN-D6Us';
+
 //const means "this is the final value - it won't change" - App won't change down the line
 //1.we want to create a new component. this component should produce html.
 //2.so take this component's HTML and put it on the page (in the DOM)
@@ -26,8 +28,7 @@ import ReactDOM from 'react-dom';
 // const App = function() {
 //   return <div>Hi!</div>;
 // }
-
-//ES6 syntax
+//ES6 syntax to above
  const App = () => {
   return <div>Hi!</div>;
  }
