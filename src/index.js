@@ -18,6 +18,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import SearchBar from './components/search_bar'; //pulls in the SearchBar component. No need to include .js so long as it is a .js file
+
 const API_KEY = 'AIzaSyCwbRmrRhqp0my7FoeKwCAfmbUKjN-D6Us';
 
 //const means "this is the final value - it won't change" - App won't change down the line
@@ -30,7 +32,12 @@ const API_KEY = 'AIzaSyCwbRmrRhqp0my7FoeKwCAfmbUKjN-D6Us';
 // }
 //ES6 syntax to above
  const App = () => {
-  return <div>Hi!</div>;
+  return (
+//calling SearchBar so it'll show up. wrapped the div in parens
+    <div>
+      <SearchBar />
+    </div>
+  );
  }
 
 //ReactDOM.render(App); App is a class here, not an instance - have to wrap it in JSX tag
