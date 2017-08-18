@@ -15,6 +15,9 @@
 //   </Provider>
 //   , document.querySelector('.container'));
 
+//state is a plain javascript object that is used to record and react to user events,
+//each class based component has it's own state
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
